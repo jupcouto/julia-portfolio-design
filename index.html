@@ -205,6 +205,12 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;bo
   .reels{grid-template-columns:1fr}
   .chapter{grid-template-columns:1fr}.chapter p{grid-column:1}
   .hero>.burst{display:none}
+  .bar{padding-block:8px}
+  .bar .in{flex-direction:column;align-items:flex-start;flex-wrap:nowrap;gap:8px;padding:10px 14px}
+  .bar .who{font-size:.68rem}
+  .bar nav{width:100%;flex-wrap:nowrap;justify-content:space-between;gap:10px;letter-spacing:.05em;font-size:.62rem;overflow-x:auto;scrollbar-width:none}
+  .bar nav::-webkit-scrollbar{display:none}
+  .bar nav a{white-space:nowrap;padding-block:4px}
 }
 @media (max-width:480px){
   .about .bio p,.xp .box>p,.case dd,.proj-info p{text-align:left}
@@ -212,11 +218,14 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;bo
   .bottle3d canvas{inset:0 0 auto 0;height:calc(100% - 64px)}
   .xp,.reels{grid-template-columns:1fr}
   .bar .in{padding:10px 12px}
-  .bar .who{font-size:.62rem}
+  .swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .swatches span{grid-column:1/-1;margin:0}
+  .swatches button{justify-content:center;gap:6px;padding:5px 6px;font-size:.78rem;min-width:0}
+  .swatches i{width:16px;height:16px;flex:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
-<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style>
 </head>
 <body>
 <header class="bar"><div class="wrap"><div class="in">
